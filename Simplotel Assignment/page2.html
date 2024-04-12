@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page2</title>
+<style>
+  body{
+      background: linear-gradient(to right, #FFFF99, #FF66CC);
+	  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .image {
+    flex: 1 0 30%;
+    margin-left: 220px;
+    margin-top: 100px;
+	margin-right:-150px;
+  }
+  .second-image {
+    flex: 1 0 30%;
+    margin-top: 340px;
+	margin-left:-690px;
+	margin-right:650px;
+  }
+  .third-image {
+    flex: 1 0 30%;
+    margin-left: -1200px; /* Adjust as neded */
+    margin-top: 100px;
+	margin-right:160px;
+  }
+  .box {
+    width: 360px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px;
+    background-color: #FF5050; /* Light Red */
+    position: absolute;
+    top: 50%;
+    right: 5px;
+	left:55%;
+    transform: translateY(-50%);
+  }
+
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .box {
+      width: 200px;
+    }
+  }
+    h6 {
+    font-size:13px;
+	margin-top:0px;
+	font-family: Calibri, sans-serif;
+  }
+
+  p {
+    text-transform: uppercase; /* convert text to uppercase */
+	font-size:45px;
+	font-weight: bold;
+	font-family: Calibri, sans-serif;
+	margin-top:0px;
+	letter-spacing: 5px;
+    word-spacing: 5px;
+	 line-height: 1;
+  }
+    .box img {
+    width:18px;
+    position: absolute; /* Position the image within the box */
+    top: 87%; 
+    left: 17%; 
+    transform: translate(-50%, -50%); /* Center the image precisely */
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image">
+    <img src="E:\Web tech\Samples\pexels-rachel-claire-6752433.jpg" alt="First Image" width="250" height="230">
+  </div>
+  <div class="second-image">
+    <img src="E:\Web tech\Samples\pexels-eva-bronzini-6141651.jpg" alt="Second Image" width="250" height="230">
+  </div>
+  <div class="third-image">
+    <img src="E:\Web tech\Samples\pexels-mister-mister-3434523.jpg" alt="Third Image" width="280" height="470">
+  </div>
+</div>
+<div class="box">
+  <h6>LOREM IPSUM</h6>
+  <p>LOREM IPSUM SET ADEMIR</p>
+  <h5> 	Click <h5>
+  <img src="E:\Web tech\Samples\icons8-arrow-30.png" >
+</div>
+</body>
+</html>

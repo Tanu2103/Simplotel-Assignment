@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page1</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #FFFF99, #FF33CC);
+	  margin-top: 0; /* Remove margin from the top of the body */
+      margin-left: 0;
+	  margin-right: 0;
+    }
+    .menu {
+      background-color: #FF5050;
+      overflow: hidden;
+      text-align: center;
+    }
+    .menu img {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+    }
+    .menu-item {
+      display: inline-block;
+      color: black;
+      text-align: left;
+      padding: 20px 50px;
+      font-family: Georgia;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    /* Styles for frames */
+    .frame-container {
+      width: 100%;
+      height: calc(100vh - 50px);
+      display: flex;
+      flex-direction: column;
+	  overflow: hidden;
+    }
+    .frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    /* Styles for content within frame1 */
+    .frame1-content {
+      display: flex;
+    }
+    .frame1-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu bar -->
+  <div class="menu">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">Order</a>
+    <a href="#" class="menu-item">Food</a>
+    <a href="#" class="menu-item">Restaurant</a>
+    <a href="#" class="menu-item">Testimonials</a>
+    <a href="#" class="menu-item">Contact Us</a>
+    <img src="E:\Web tech\Samples\menu-bar.png">
+  </div>
+
+  <!-- Frames -->
+  <div class="frame-container">
+    <iframe class="frame" name="frame1" scrolling="no" srcdoc="
+      <!DOCTYPE html>
+      <html lang='en'>
+      <head>
+        <meta charset='UTF-8'>
+        <title>Page 1 Content</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin-bottom:50px;
+            padding: 20px;
+			overflow:hidden;
+          }
+          h2 {
+            text-align: left;
+            font-family: calibri;
+            font-size: 55px;
+            word-spacing: 0.2em;
+            letter-spacing: 10px;
+            margin-left: 50px;
+          }
+          p {
+            text-align: justify; 
+            color: #222024; 
+            font-size: 16px; 
+            line-height: 1.6; 
+            margin-left: 50px;
+          }
+		  .frame1-image {
+           flex: 1;
+           display: right;	
+           text-align: right;		  
+           justify-content: flex-end; /* Align content to the right */
+           align-items: right;
+           padding-right: 20px; /* Adjust padding to create space */
+          }
+
+         .frame1-image img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 700px; /* Adjust the width as needed */
+          height:700px; /* Maintain aspect ratio */
+		  padding-bottom:5px;
+          }   
+		.button{
+		 text-align: left; 
+         margin-top:30px;
+         margin-left: 50px;
+		 display: inline-block;
+         padding: 10px 55px;
+         background-color: #FF5050;
+         color: white;
+         border: none;
+         cursor: pointer;
+         font-size: 16px;
+		}
+      </style>
+      </head>
+      <body>
+        <div class='frame1-content'>
+          <div class='frame1-text'>
+            <div class='content'>
+              <h2>LOREM IPSUM</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus<br>
+              id est vitae dolor rhoncus tristique. Maecenas metus quam,<br>
+              rhoncus euismod lorem in, sollicitudin viverra eros. Donec<br>
+              dictum luctus quam ut tristique. Curabitur nec faucibus purus.<br>
+              Quisque congue sem nec justo mollis, in tincidunt erat pretium.<br>
+              Sed pulvinar, massa ac porta viverra.</p>
+              <button class='button'>Click Me</button>
+            </div>
+          </div>
+          <div class='frame1-image'>
+            <img src='E:\Web tech\Samples\pexels-robin-stickel-70497.jpg'>
+          </div>
+        </div>
+      </body>
+      </html>
+    "></iframe>
+</div>	
+</body>
+</html>
